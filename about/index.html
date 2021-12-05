@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="baidu-site-verification" content="code-cPSNUmeavh"><meta name="keywords" content="哈哈哈哈哈哈哈"><title>关于我 | 玖爱OP的个人博客</title><meta name="description" content="h2 .fa-link, h2 .fa-newspaper, h2 .fa-tasks{     font-size: .9rem;     color: #f47466;     line-height: 1;   }   p .fa-address-card { color: #009688; }   p .fa-venus-mars { color: #f44336; }   p .f"><meta name="author" content="玖爱OP的个人纯静态HTML博客,itchenliang@163.com"><meta name="copyright" content="玖爱OP"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/helinghands/cdn/img/favicon.ico"><link rel="canonical" href="https://jiuaiop.gitee.io/about/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta property="og:type" content="website"><meta property="og:title" content="关于我"><meta property="og:url" content="https://jiuaiop.gitee.io/about/"><meta property="og:site_name" content="玖爱OP的个人博客"><meta property="og:description" content="h2 .fa-link, h2 .fa-newspaper, h2 .fa-tasks{     font-size: .9rem;     color: #f47466;     line-height: 1;   }   p .fa-address-card { color: #009688; }   p .fa-venus-mars { color: #f44336; }   p .f"><meta property="og:image" content="http://pic1.win4000.com/wallpaper/2020-08-14/5f363d07a24be_270_185.jpg"><meta property="article:published_time" content="2020-09-04T07:39:21.000Z"><meta property="article:modified_time" content="2021-09-01T05:56:36.552Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6726e86ec711240d24bbc27c676f0822";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: 玖爱OP","link":"链接: ","source":"来源: 玖爱OP的个人博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-09-01 13:56:36'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> <link rel="stylesheet" href="https://at.alicdn.com/t/font_2061413_4ovf12xxgyo.css"> <link rel="stylesheet" href="/css/style.css"> <script src="/live2d-widget/autoload.js"></script> <script src="/js/axios.js"></script> <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="玖爱OP的个人博客" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://z3.ax1x.com/2021/07/14/WVzbTJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">28</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">51</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-boxes"></i><span> 分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/web%E5%89%8D%E7%AB%AF"><i class="fa-fw fab fa-js"></i><span> web前端</span></a></li><li><a class="site-page" href="/categories/Git配置"><i class="fa-fw fab fa-java"></i><span>  Git配置</span></a></li><li><a class="site-page" href="/categories/博客搭建"><i class="fa-fw fab fa-python"></i><span> 博客搭建</span></a></li><li><a class="site-page" href="/categories/图床"><i class="fa-fw fas fa-database"></i><span> 图床</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fab fa-monero"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/musics/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tachometer-alt"></i><span> 开发/后台</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/develop/"><i class="fa-fw far fa-window-restore"></i><span> 开发</span></a></li><li><a class="site-page" href="/back/"><i class="fa-fw fas fa-chart-line"></i><span> 后台</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw far fa-comments"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于博主</span></a></li><li><a class="site-page" href="/resume/"><i class="fa-fw far fa-address-card"></i><span> 博主简历</span></a></li><li><a class="site-page" href="/adcoorperate/"><i class="fa-fw fas fa-ad"></i><span> 广告招商</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw far fa-images"></i><span> 相册</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://www.jlii.net"><i class="fa-fw fas fa-paper-plane"></i><span> 主页</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="not-index-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/helinghands/cdn/img/about_top.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">玖爱OP的个人博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-boxes"></i><span> 分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/web%E5%89%8D%E7%AB%AF"><i class="fa-fw fab fa-js"></i><span> web前端</span></a></li><li><a class="site-page" href="/categories/Git配置"><i class="fa-fw fab fa-java"></i><span> Git配置</span></a></li><li><a class="site-page" href="/categories/博客搭建"><i class="fa-fw fab fa-python"></i><span> 博客搭建</span></a></li><li><a class="site-page" href="/categories/图床"><i class="fa-fw fas fa-database"></i><span> 图床</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fab fa-monero"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/musics/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tachometer-alt"></i><span> 开发/后台</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/develop/"><i class="fa-fw far fa-window-restore"></i><span> 开发</span></a></li><li><a class="site-page" href="/back/"><i class="fa-fw fas fa-chart-line"></i><span> 后台</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw far fa-comments"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于博主</span></a></li><li><a class="site-page" href="/resume/"><i class="fa-fw far fa-address-card"></i><span> 博主简历</span></a></li><li><a class="site-page" href="/adcoorperate/"><i class="fa-fw fas fa-ad"></i><span> 广告招商</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw far fa-images"></i><span> 相册</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://www.jlii.net"><i class="fa-fw fas fa-paper-plane"></i><span> 主页</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">关于我</h1></div></header><main class="layout_page hide-aside" id="content-inner"><div id="page"><div id="article-container"><style>
+  h2 .fa-link, h2 .fa-newspaper, h2 .fa-tasks{
+    font-size: .9rem;
+    color: #f47466;
+    line-height: 1;
+  }
+  p .fa-address-card { color: #009688; }
+  p .fa-venus-mars { color: #f44336; }
+  p .fa-heart { color: #e91e63; }
+  p .fa-allergies { color: #00bcd4; }
+  p .fa-accusoft { color: rgb(6, 29, 140); }
+  p .fa-map-marker-alt { color: #ff5722; }
+
+
+  p .fa-html5{ color: #fc490b; }
+  p .fa-css3-alt{ color: #2196f3; }
+  p .fa-node-js{ color: #ffc636; }
+  p .fa-dollar-sign{ color: #0769ad; }
+  p .fa-columns{ color: #563b7e; }
+  p .fa-vuejs{ color: #41b783; }
+  p .fa-react{ color: #60d9fa; }
+  p .fa-npm{ color: #cc3838; }
+  p .fa-node{ color: #7eb12b; }
+  p .fa-comment-dots{ color: #ff9800; }
+  p .fa-database{ color: #4775b0; }
+  p .fa-markdown{ color: #000000; }
+  p .fa-sass{ color: #cb6698; }
+  p .fa-less{ color: #1d365d; }
+  p .fa-amazon{ color: #2d8ac8; }
+  p .fa-chart-bar{ color: #a3354e; }
+  p .fa-laptop-medical{ color: #a9ecf8; }
+  p .fa-java{ color: #db887f; }
+  p .fa-php{ color: #5a68a5; }
+  p .fa-link{ color: #f47466; }
+  p .fa-qq{ color: #ed4750; }
+</style>
+
+<center>
+<a href="#" target="_blank" style="display: block;"><img style="border-radius:50%;width:110px;height:auto;margin: 0;padding: 0;" src= "/img/loading.gif" data-lazy-src="https://z3.ax1x.com/2021/07/14/WVzbTJ.jpg" /></a>
+</center>
+<center style="font-size:1.7rem;font-weight:700;background-image:linear-gradient(92deg,#f35626 0,#feab3a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+<a href="#" target="_blank">玖爱OP的个人纯静态HTML博客</a>
+</center>
+
+<h2 id="个人简介"><a href="#个人简介" class="headerlink" title=" 个人简介"></a><i class="fas fa-link"></i> 个人简介</h2><p><i class="fas fa-address-card"></i> 昵称：玖爱OP<br><i class="fas fa-venus-mars"></i> 性别：男<br><i class="far fa-heart"></i> 生活：00后，能吃苦耐劳，适应性强，性格开朗，积极主动，喜欢热闹，注意生活中的细节。<br><i class="fas fa-allergies"></i> 爱好: IT，动漫，旅游，游戏，做美食，吃美食<br><i class="fab fa-accusoft"></i> 职位：web前端开发工程师<br><i class="fas fa-map-marker-alt"></i> 定位：成都<br><i class="fas fa-link"></i> 联系方式：</p>
+<ul>
+<li><i class="fab fa-qq"></i> QQ：87316319</li>
+<li><i class="fab fa-weixin"></i> 微信：xxxxxxx</li>
+<li><i class="fas fa-envelope"></i> 邮箱：jlii.net@88.com</li>
+<li><i class="fas fa-desktop"></i> 网站：<a target="_blank" rel="noopener" href="https://www.jlii.net:443">https://www.jlii.net:443</a></li>
+</ul>
+<h2 id="关于博客"><a href="#关于博客" class="headerlink" title=" 关于博客"></a><i class="far fa-newspaper"></i> 关于博客</h2><p>框架：Hexo 框架<br>主题：Butterfly 主题<br>存储：Github 存储 + Jsdeliv CDN 加速<br>部署：Github + Vercel + Coding + 阿里云服务器<br>博客中的部分图片源于网络，侵删<br>本博客文章采用 CC BY-NC-SA 4.0 协议，转载请注明出处</p>
+<h2 id="✔-技能掌握"><a href="#✔-技能掌握" class="headerlink" title="✔ 技能掌握"></a>✔ 技能掌握</h2><p><i class="fab fa-html5"></i>：HTML<br><i class="fab fa-css3-alt"></i>：CSS<br><i class="fab fa-node-js"></i>：JavaScript、ESCMScript、TypeScript<br><i class="fas fa-dollar-sign"></i>：jQuery<br><i class="fas fa-columns"></i>：Bootstrap、Layui<br><i class="fab fa-vuejs"></i>：Webpack、Vue、Vue-Router、Vuex、Vue-cli、Axios、ElementUi、AntDesign、iView<br><i class="fab fa-react"></i>：React、React-Dom、React-Router、Axios、Redux<br><i class="fab fa-npm"></i>：npm<br><i class="fab fa-node"></i>：Node、Express、Koa<br><i class="fas fa-comment-dots"></i>：socket<br><i class="fas fa-tablet-alt"></i>：uni-app、微信小程序、Weex、ReactNative、HybridApp<br><i class="fas fa-database"></i>：Mysql、MongoDB、Redis<br><i class="fab fa-markdown"></i>：markdown<br><i class="fab fa-sass"></i>：sass<br><i class="fab fa-less"></i>：less<br><i class="fab fa-amazon"></i>：Ajax、axios、vue-resource、jquery<br><i class="fas fa-chart-bar"></i>：Echarts、Highcharts<br><i class="fas fa-laptop-medical"></i>：electron<br><i class="fab fa-java"></i>：Java<br><i class="fab fa-python"></i>：Python<br><i class="fab fa-php"></i>：PHP</p>
+<h2 id="开源项目"><a href="#开源项目" class="headerlink" title=" 开源项目"></a><i class="fas fa-tasks"></i> 开源项目</h2><p>后台模板：<a target="_blank" rel="noopener" href="http://localhost:4000/messageboard/">http://localhost:4000/messageboard/</a><br>聊天系统：<a target="_blank" rel="noopener" href="http://localhost:4000/messageboard/">http://localhost:4000/messageboard/</a><br>爬虫系统：<a target="_blank" rel="noopener" href="http://localhost:4000/messageboard/">http://localhost:4000/messageboard/</a><br>记账程序：<a target="_blank" rel="noopener" href="http://localhost:4000/messageboard/">http://localhost:4000/messageboard/</a><br>
+<p>感谢您花时间阅读我的博客，有什么问题或者商务合作均可以到留言板留言哦。祝好！ </p>
+</div></div></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/helinghands/cdn/img/about_top.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By <a href="/">玖爱OP</a></div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="icp"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/"><img class="icp-icon" src="/img/icp.png"/><span>粤ICP备12009483号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script id="canvas_nest" defer="defer" color="122,216,123" opacity="0.5" zIndex="-1" count="250" mobile="false" src="/js/third-party/canvas-nest.js"></script></div><style type="text/css">
+   ::-webkit-scrollbar {
+  width: 12px;    
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#12b7f5;
+  background-image: -webkit-linear-gradient(30deg, rgba(18, 183, 245, 1) 100%, transparent 25%, transparent 50%, rgba(18, 183, 243, 1) 50%,rgba(18, 183, 245, 1) 75%, transparent 100%, transparent);
+}
+body {
+cursor: url(https://gitee.com/qingyu520/imgs/raw/master/01545412jgft.png), default;
+}
+a:hover{cursor:url(https://gitee.com/qingyu520/imgs/raw/master/tDjMjvtIEjwu.png), pointer;
+}
+</style></body></html>
